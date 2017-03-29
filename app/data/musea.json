@@ -125,7 +125,8 @@
     "url": "https://www.regionaalarchiefalkmaar.nl/",
     "sources": [
       "archief_alkmaar_bonda",
-      "archief_alkmaar_bosboom"
+      "archief_alkmaar_bosboom",
+      "archief_alkmaar_voor_1900"
     ],
     "uri": "regionaal-archief-alkmaar"
   },
@@ -155,5 +156,21 @@
 
         ],
     "uri": "regionaal-archief-nijmegen"
+  },
+  {
+    "img": "https://raw.githubusercontent.com/openstate/ocd-search/master/app/img/sourcelogo/utrechtsarchief.png",
+    "url": "https://www.utrechtsarchief.nl/",
+    "sources": [
+      "utrechts_archief_saenredam"
+    ],
+    "uri": "utrechts-archief"
+  },
+  {
+    "img": "https://raw.githubusercontent.com/openstate/ocd-search/master/app/img/sourcelogo/gelderland.png",
+    "url": "http://www.collectiegelderland.nl/",
+    "sources": [
+      "collectie_gelderland"
+    ],
+    "uri": "collectie-gelderland"
   }
 ]
