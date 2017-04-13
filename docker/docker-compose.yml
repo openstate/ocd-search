@@ -1,0 +1,27 @@
+version: '3'
+services:
+  c-ocd-search-nginx:
+    build:
+      context: .
+      dockerfile: Dockerfile-nginx
+    volumes:
+      - ./nginx/:/etc/nginx/
+      - ../:/usr/share/nginx/html/
+    restart: always
+    networks:
+      - nginx-load-balancer
+      - ocd-search
+  c-ocd-search-app:
+    build:
+      context: ..
+      dockerfile: Dockerfile
+    volumes:
+      - ../php/:/usr/share/nginx/html/php/
+    restart: always
+    networks:
+      - ocd-search
+networks:
+  ocd-search:
+  nginx-load-balancer:
+    external:
+      name: docker_nginx-load-balancer
